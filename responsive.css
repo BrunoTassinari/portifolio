@@ -1,0 +1,41 @@
+@media (min-width: 400px){
+    body{
+        font-size: 18px;
+    }
+}
+@media (min-width: 800px){
+    body{
+        font-size: 19px;
+    }
+}
+@media (min-width: 1000px){
+    body{
+        font-size: 20px;
+    }
+}
+@media (min-width: 650px){
+    .portfolio .grid{
+        justify-content: center;
+        grid-template-columns: repeat(2, 260px);
+        height: calc(100vh - 49px - 8em);
+    }
+}
+
+@media (min-width: 937px){
+    .portfolio .grid{
+        justify-content: center;
+        grid-template-columns: repeat(3, 260px);
+    }
+    img.img-portfolio {
+        height: 180px;
+        width: 240px;
+    }
+}
+
+@media (min-width: 1200px){
+    .container{
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}

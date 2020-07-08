@@ -1,0 +1,169 @@
+
+:root{
+    --color1:#0f1626;
+    --color2:#ab987a;
+    --color3:#ff533d;
+    --color4:#f5f5f5;
+  
+  }
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background:var(--color1);
+    -webkit-font-smoothing: antialiased;
+    font-family: Arial;
+    background-size: auto 500vh;
+    height: 100vh;
+    font-size: 16px;
+}
+
+header{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+.menu {
+    background-color: var(--color2);
+    position: fixed;
+    width: 100vw;
+    top: 0px;
+    box-shadow: var(--color3) 1px 1px 1px;
+    z-index: 1;
+}
+
+.menu a {
+    color:var(--color1);
+    padding: 10px 20px;
+    display: block;
+    transition: background-color 2s, color 2s;
+    border-radius: 30px;
+    font-size: 1.1em;
+    
+   
+}
+
+.menu a:hover {
+    background-color: var(--color1);
+    color:var(--color4);
+
+}
+.menu li {
+    list-style: none;
+}
+.menu ul {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+
+a:hover {
+    text-decoration: underline;
+
+}
+.site-title{
+    font-family: 'Dosis', sans-serif;
+}
+.site-subtitle{
+    font-family: 'Oxygen', sans-serif;
+}
+.site-subtitle,
+.site-title {
+    font-size: 2.3em;
+    text-align: center;
+    color:var(--color4);
+    
+}
+.sobre,
+.contato,
+.portfolio{
+    padding: 2em;
+    min-height: 100vh;
+    
+}
+.sobre h2,
+.contato h2,
+.portfolio h2{
+    font-family: 'Ubuntu Mono', monospace;
+    margin-bottom: 60px;
+    font-size: 2.6em;
+    color: var(--color3);
+}
+.sobre .profile{
+    max-width:200px;
+    max-height:250px;
+    width: auto;
+    height: auto;
+    margin-right: 1em;
+    float: left;
+    border-radius: 1em;
+    border: var(--color2) solid;
+
+
+    
+}
+
+
+.sobre p{
+    color: var(--color4);
+    text-indent: 2em;
+    margin-bottom: 1em;
+    text-align: justify;
+}
+
+.portfolio .grid{
+    display: grid;
+    gap: 1.5em;
+}
+
+.portfolio .grid figure{
+    text-align: center;
+}
+
+img.img-portfolio {
+    height: 180px;
+    width: 240px;
+    border-style: solid;
+    border-radius: 20px;
+    border-color: var(--color2);
+    transition: transform 500ms;
+    
+}
+
+figcaption{
+    color: var(--color4);
+    font-size: 1.2em;
+    font-family: 'Ubuntu Mono', monospace;
+}
+
+img.img-portfolio:hover {
+    transform: scale(1.2);
+    
+}
+.contato .icons{
+    text-align: center;
+}
+.contato a{
+    color: var(--color2);
+    font-size: 6em;
+    
+}
+.contato a:hover{
+    text-decoration: none;
+    text-shadow: 1px 3px 20px var(--color3);
+}
+
+
+
+
